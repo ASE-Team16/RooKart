@@ -80,11 +80,11 @@ public class    MainActivity extends AppCompatActivity implements OnGetdata {
             }
 
 
-                Intent intent = new Intent(c, HomeActivity.class);
-                intent.putExtra(Extra_Message, user);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            Intent intent = new Intent(c, HomeActivity.class);
+            intent.putExtra(Extra_Message, user);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
-                c.startActivity(intent);
+            c.startActivity(intent);
 
 
         }
