@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.raj.rookart">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    ﻿
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAkXqsozl6jvVea7KVSFqwbLPfGC9HCzxc" />
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".registration" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".user_home"
+            android:label="products home" />
+        <activity
+            android:name=".MAPS"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".job_post"
+            android:label="@string/title_activity_job_post" />
+        <activity
+            android:name=".task_search"
+            android:label="@string/title_activity_task_search" />
+        <activity
+            android:name=".task_search_result"
+            android:label="@string/title_activity_task_search_result" />
+        <activity
+            android:name=".search_MAPS"
+            android:label="@string/title_activity_search__maps" />
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MAPS_service" />
+        <activity android:name=".search_MAPS_service" />
+        <activity android:name=".job_post_service" />
+        <activity android:name=".task_search_result_service" />
+        <activity android:name=".task_search_service" />
+        <activity android:name=".user_service"></activity>
+    </application>
+
+</manifest>
